@@ -1,0 +1,367 @@
+.page-container {
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 71px 60px 15px;
+  }
+  
+  @media (max-width: 991px) {
+    .page-container {
+      padding: 0 20px;
+    }
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    max-width: 1065px;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+    }
+  }
+  
+  .header-content {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    color: #fff;
+  }
+  
+  @media (max-width: 991px) {
+    .header-content {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .header-title {
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 700 22px Inter, sans-serif;
+  }
+  
+  .header-nav {
+    align-self: start;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 137.5%;
+  }
+  
+  @media (max-width: 991px) {
+    .header-nav {
+      white-space: initial;
+    }
+  }
+  
+  .header-nav-item {
+    font-family: Outfit, sans-serif;
+    text-transform: uppercase;
+    flex-grow: 1;
+  }
+  
+  .header-heading {
+    text-align: center;
+    -webkit-text-stroke-width: 3;
+    -webkit-text-stroke-color: #fff;
+    border: 3px solid rgba(255, 255, 255, 1);
+    align-self: center;
+    margin-top: 178px;
+    font: 600 128px/21% Outfit, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .header-heading {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+  
+  .main-content {
+    align-self: center;
+    margin-top: 98px;
+    width: 100%;
+    max-width: 993px;
+  }
+  
+  @media (max-width: 991px) {
+    .main-content {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .about-section-content {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .about-section-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  
+  .about-section-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  
+  @media (max-width: 991px) {
+    .about-section-column {
+      width: 100%;
+    }
+  }
+  
+  .about-section-image-container {
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .about-section-image-container {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .about-section-image {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .about-section-image {
+      margin-top: 40px;
+    }
+  }
+  
+  .about-section-details {
+    display: flex;
+    margin-top: 7px;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 18px;
+    color: #ab9d9d;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  
+  @media (max-width: 991px) {
+    .about-section-details {
+      margin-top: 40px;
+    }
+  }
+  
+  .about-section-title {
+    color: #fff;
+    font: 20px/137.5% Outfit, sans-serif;
+  }
+  
+  .about-section-paragraph {
+    font-family: Outfit, sans-serif;
+    margin-top: 23px;
+  }
+  
+  .language-list {
+    display: flex;
+    margin-top: 7px;
+    flex-direction: column;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .language-list {
+      margin-top: 40px;
+    }
+  }
+  
+  .language-list-title {
+    color: #fff;
+    font: 20px/137.5% Outfit, sans-serif;
+  }
+  
+  .language-list-content {
+    color: #ab9d9d;
+    margin-top: 19px;
+    font: 18px/27px Outfit, sans-serif;
+  }
+  
+  .divider {
+    background-color: #6c6262;
+    margin-top: 180px;
+    height: 2px;
+  }
+  
+  @media (max-width: 991px) {
+    .divider {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .contact-section {
+    display: flex;
+    width: 601px;
+    max-width: 100%;
+    flex-direction: column;
+    margin: 61px 0 0 14px;
+  }
+  
+  @media (max-width: 991px) {
+    .contact-section {
+      margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .contact-section-content {
+      max-width: 100%;
+    }
+  }
+  
+  .contact-section-content {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .contact-section-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  
+  .contact-section-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+  }
+  
+  @media (max-width: 991px) {
+    .contact-section-column {
+      width: 100%;
+    }
+  }
+  
+  .contact-section-title {
+    color: #fff;
+    font: 700 32px/86% Outfit, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .contact-section-title {
+      margin-top: 40px;
+    }
+  }
+  
+  .contact-info {
+    display: flex;
+    margin-top: 4px;
+    flex-grow: 1;
+    flex-direction: column;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .contact-info {
+      margin-top: 40px;
+    }
+  }
+  
+  .contact-info-title {
+    color: #fff;
+    font: 20px/137.5% Outfit, sans-serif;
+  }
+  
+  .contact-info-content {
+    color: #ab9d9d;
+    margin-top: 18px;
+    font: 18px/27px Outfit, sans-serif;
+  }
+  
+  .contact-info-link {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    display: flex;
+    margin-top: 93px;
+    width: 279px;
+    max-width: 100%;
+    gap: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .footer {
+      margin-top: 40px;
+    }
+  }
+  
+  .footer-links {
+    display: flex;
+    width: 100%;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #878080;
+    font-weight: 500;
+    line-height: 172%;
+    flex: 1;
+  }
+  
+  .footer-title {
+    color: #fff;
+    font: 700 32px/86% Outfit, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .footer-link {
+    font-family: Outfit, sans-serif;
+    margin-top: 24px;
+  }
+  
+  .footer-divider {
+    background-color: #6c6262;
+    margin-top: 43px;
+    height: 2px;
+  }
+  
+  @media (max-width: 991px) {
+    .footer-divider {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .footer-copyright {
+    color: #fff;
+    margin-top: 43px;
+    font: 400 14px/28px Outfit, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .footer__copyright {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
