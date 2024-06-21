@@ -3,7 +3,7 @@ import React from "react";
 function LanguageList() {
     return (
         <div className="language-list">
-            <div className="language-list-title">Coding Languages Worked With</div>
+            <h2 className="language-list-title">Coding Languages Worked With</h2>
             <div className="language-list-content">
                 <ul>
                     <li>Python</li>

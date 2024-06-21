@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import '../../Styles/Footer.css'
 
 function Footer() {
   return (
@@ -6,13 +8,31 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-about">
           <h3 className="footer-title">ABOUT</h3>
-          <p className="footer-link">About Jean</p>
-          <p className="footer-link">Instagram</p>
-          <p className="footer-link">Linkedin</p>
+          <Link to="/about" className="footer-link">
+            About Jean
+          </Link>
+          <a 
+            href="https://www.instagram.com/_jeanvaneck/"
+            className="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jean-van-eck-70244b247"
+            className="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </a>
         </div>
         <div className="footer-work">
           <h3 className="footer-title">WORK</h3>
-          <p className="footer-link">Projects</p>
+          <Link to="/projects" className="footer-link">
+            Projects
+          </Link>
         </div>
       </div>
       <div className="footer-separator" />

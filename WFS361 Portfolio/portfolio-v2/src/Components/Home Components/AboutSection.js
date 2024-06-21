@@ -12,7 +12,7 @@ function AboutSection() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/c56261d69302d778f3a0019cb023ed2829a8d3ed1136d36e216a6df54c7a3894?apiKey=051fe626959043f59078f8867e7b113b&"
             alt="Placeholder"
-            className="about-image"
+            className="divider-image"
           />
           <div className="about-studying">
             <p className="studying-text">
@@ -24,6 +24,7 @@ function AboutSection() {
               className="studying-image"
             />
           </div>
+          <button className="download-cv">Download CV</button>
         </div>
         <div className="about-photo">
           <img

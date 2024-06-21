@@ -17,7 +17,7 @@ function AboutSection () {
                 </div>
                 <div className="about-section-column">
                     <div className="about-section-details">
-                        <h2 className="about-section-title">About Jean van Eck</h2>
+                        <h2 className="about-section-sub-title">About Jean van Eck</h2>
                         <p className="about-section-paragraph">
                             My name is Jean van Eck, and I was born October 11, 2003. I live
                             in a small town named Willowmore, which is pretty much in the
@@ -43,10 +43,12 @@ function AboutSection () {
                         </p>
                     </div>
                 </div>
+                <div className="about-section-column">
+                    <LanguageList />
+                </div>
             </div>
-            <LanguageList />
         </section>
     );
 }
 
-export default AboutSection
+export default AboutSection;

@@ -1,55 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
 .container {
     background-color: #181818;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 71px 60px 13px;
-  }
-
-  @media (max-width: 991px) {
-    .container {
-      padding: 0 20px;
-    }
-  }
-
-  .header {
-    display: flex;
-    width: 100%;
-    max-width: 1065px;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-  }
-
-  @media (max-width: 991px) {
-    .header {
-      max-width: 100%;
-      flex-wrap: wrap;
-    }
-  }
-
-  .logo {
-    font: 700 22px Inter, sans-serif;
-  }
-
-  .navigation {
-    display: flex;
-    gap: 20px;
-    font-size: 20px;
-    font-weight: 400;
-    white-space: nowrap;
-    line-height: 137.5%;
-  }
-
-  @media (max-width: 991px) {
-    .navigation {
-      white-space: initial;
-    }
-  }
-
-  .nav-item {
-    font-family: Outfit, sans-serif;
-    text-transform: uppercase;
+    padding: 7px 60px 13px;
   }
 
   .home-title {
@@ -59,16 +15,8 @@
     font-size: 128px;
     font-weight: 600;
     line-height: 21%;
-    border: 3px solid rgba(255, 255, 255, 1);
     align-self: center;
     margin-top: 178px;
-  }
-
-  @media (max-width: 991px) {
-    .home-title {
-      margin-top: 40px;
-      font-size: 40px;
-    }
   }
 
   .about-section {
@@ -77,27 +25,13 @@
     flex-direction: column;
     align-items: center;
     padding: 0 29px 0 65px;
-  }
-
-  @media (max-width: 991px) {
-    .about-section {
-      max-width: 100%;
-      margin-top: 40px;
-      padding: 0 20px;
-    }
+    position: relative;
   }
 
   .about-content {
     display: flex;
     gap: 20px;
-  }
-
-  @media (max-width: 991px) {
-    .about-content {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0;
-    }
+    position: relative;
   }
 
   .about-text {
@@ -109,26 +43,28 @@
     color: #fff;
     font-weight: 400;
     margin-top: 98px;
-  }
-
-  @media (max-width: 991px) {
-    .about-text {
-      width: 100%;
-      margin-top: 40px;
-    }
+    position: relative;
+    z-index: 1;
   }
 
   .about-description {
+    color: #AB9D9D;
     font: 30px/27px Outfit, sans-serif;
+    position: relative;
+    top: 20px;
+    left: 400px;
+    width: 80%;
   }
 
-  .about-image {
-    aspect-ratio: 25;
+  .divider-image {
     object-fit: auto;
     object-position: center;
     width: 168px;
     margin-top: 36px;
     max-width: 100%;
+    position: relative;
+    z-index: 0;
+    left: 400px;
   }
 
   .about-studying {
@@ -139,16 +75,12 @@
     font-size: 20px;
     line-height: 28px;
     margin: 30px 0 0 25px;
-  }
-
-  @media (max-width: 991px) {
-    .about-studying {
-      margin-left: 10px;
-    }
+    left: 400px;
   }
 
   .studying-text {
     font-family: Outfit, sans-serif;
+    color: #AB9D9D;
   }
 
   .studying-image {
@@ -180,6 +112,8 @@
     object-position: center;
     width: 100%;
     flex-grow: 1;
+    width: 546px;
+    height: 686px;
   }
 
   .languages-separator {
@@ -188,12 +122,6 @@
     object-position: center;
     width: 7px;
     margin: 68px 0 0 18px;
-  }
-
-  @media (max-width: 991px) {
-    .languages-separator {
-      margin-top: 40px;
-    }
   }
 
   .languages-text {
@@ -225,24 +153,11 @@
     margin-top: 69px;
   }
 
-  @media (max-width: 991px) {
-    .career-separator {
-      margin-top: 40px;
-    }
-  }
-
   .career-section {
     display: flex;
     flex-direction: column;
     color: #fff;
     margin: 111px 0 0 73px;
-  }
-
-  @media (max-width: 991px) {
-    .career-section {
-      max-width: 100%;
-      margin-top: 40px;
-    }
   }
 
   .career-title {
@@ -254,76 +169,34 @@
     font: 400 24px/115% Outfit, sans-serif;
   }
 
-  .footer {
+  .download-cv {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 200px;
+    left: 400px;
+  }
+
+.download-cv:hover {
+    background-color: #FFFFFF;
+    color: #1C1B1B;
+}
+
+.divider-image, .about-studying, .download-cv {
+  position: relative;
+  z-index: 0;
+}
+
+  /* .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: 399px;
-  }
-
-  @media (max-width: 991px) {
-    .footer {
-      margin-top: 40px;
-    }
-  }
-
-  .footer-links {
-    display: flex;
-    width: 279px;
-    max-width: 100%;
-    gap: 20px;
-  }
-
-  .footer-about {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    color: #878080;
-    font-weight: 500;
-    line-height: 172%;
-    flex: 1;
-  }
-
-  .footer-title {
-    color: #fff;
-    font: 700 32px/86% Outfit, sans-serif;
-  }
-
-  .footer-link {
-    font-family: Outfit, sans-serif;
-    margin-top: 24px;
-  }
-
-  .footer-work {
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    flex: 1;
-  }
-
-  @media (max-width: 991px) {
-    .footer-work {
-      white-space: initial;
-    }
-  }
-
-  .footer-separator {
-    background-color: #6c6262;
-    margin-top: 123px;
-    height: 2px;
-    width: 100%;
-  }
-
-  @media (max-width: 991px) {
-    .footer-separator {
-      margin-top: 40px;
-    }
-  }
-
-  .footer-copyright {
-    color: #fff;
-    margin-top: 26px;
-    font: 400 14px/28px Outfit, sans-serif;
-    text-align: center;
-  }
+  } */
