@@ -1,5 +1,6 @@
 import React from "react";
 import LanguageList from "./LanguageList";
+import ProfilePic from '../../Images/profile-pic.png';
 
 function AboutSection () {
     return (
@@ -9,7 +10,7 @@ function AboutSection () {
                     <div className="about-section-image-container">
                         <img
                             loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/08cd3d292ab31c1210d5bd6bb84524a2d5cd2b44ea545f06e7d073dd28669daf?apiKey=051fe626959043f59078f8867e7b113b&"
+                            src={ProfilePic}
                             className="about-section-image"
                             alt="Jean van Eck profile photo"
                         />

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from '../Components/Reusable Components/Header';
-import AboutSection from '../Components/Home Components/AboutSection';
-import CareerSection from '../Components/Home Components/LanguagesSection';
+import MainContent from '../Components/Home Components/MainContent';
+import CareerSection from '../Components/Home Components/CareerSection';
 import Contact from '../Components/Reusable Components/Contact';
 import Footer from '../Components/Reusable Components/Footer';
 import '../Styles/Home.css';
@@ -11,8 +11,9 @@ function Home() {
     <div className="container">
       <Header />
       <h1 className="home-title">HOME</h1>
-      <AboutSection />
+      <MainContent />
       <CareerSection />
+      <div className="divider"/>
       <Contact />
       <Footer />
     </div>

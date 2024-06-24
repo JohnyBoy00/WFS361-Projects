@@ -4,7 +4,6 @@
     background-color: #181818;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 7px 60px 13px;
   }
 
@@ -83,13 +82,16 @@
     color: #AB9D9D;
   }
 
-  .studying-image {
-    aspect-ratio: 3.57;
-    object-fit: auto;
-    object-position: center;
-    width: 161px;
-    margin-top: 16px;
-    max-width: 100%;
+  .icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .icons {
+    width: 50px;
+    height: 50px; 
+    object-fit: contain;
   }
 
   .about-photo {
@@ -98,12 +100,6 @@
     line-height: normal;
     width: 50%;
     margin-left: 20px;
-  }
-
-  @media (max-width: 991px) {
-    .about-photo {
-      width: 100%;
-    }
   }
 
   .profile-image {
@@ -158,20 +154,25 @@
     flex-direction: column;
     color: #fff;
     margin: 111px 0 0 73px;
+    text-align: left;
+    margin-left: 289px;
   }
 
   .career-title {
     font: 700 32px/86% Outfit, sans-serif;
+    text-align: left;
   }
 
   .career-description {
     margin-top: 20px;
     font: 400 24px/115% Outfit, sans-serif;
+    margin-bottom: 610px;
+    text-align: left;
   }
 
   .download-cv {
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
+    background-color: #5f5454;
+    border: 2px solid #5f5454;
     color: #FFFFFF;
     padding: 10px 20px;
     font-size: 16px;
@@ -179,12 +180,12 @@
     border-radius: 8px;
     margin-top: 20px;
     margin-left: 10px;
-    width: 200px;
+    width: 150px;
     left: 400px;
   }
 
 .download-cv:hover {
-    background-color: #FFFFFF;
+    background-color: #ceb3b3;
     color: #1C1B1B;
 }
 
@@ -193,10 +194,87 @@
   z-index: 0;
 }
 
-  /* .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.divider {
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  width: calc(100% - 60px);
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+
+ /* Mobile Styles */
+@media (max-width: 430px) {
+  .container {
+      padding: 7px 20px 13px;
+  }
+
+  .home-title {
+      font-size: 60px;
+      margin-top: 50px;
+  }
+
+  .about-section {
+      margin-top: 50px;
+      padding: 0 20px;
+  }
+
+  .about-text, .about-photo {
+      width: 100%;
+  }
+
+  .about-description, .divider-image, .about-studying, .career-section {
+      left: 0;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .career-title {
+      font-size: 24px;
+  }
+
+  .career-description {
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+
+  .languages-image {
+      width: 100%;
+  }
+
+  .download-cv {
+      width: 100%;
+      left: 0;
+  }
+
+  .contact-info {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile-image {
+    position: relative;
+
+  }
+
+  .about-studying, .icons-container {
     width: 100%;
-    margin-top: 399px;
-  } */
+    justify-content: center; 
+  }
+
+  .icons {
+    width: 40px;
+    height: 40px;
+  }
+
+  .download-cv {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

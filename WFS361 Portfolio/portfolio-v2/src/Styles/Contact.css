@@ -37,3 +37,17 @@
     text-decoration: underline;
     color: #FFFFFF;
 }
+
+/* Mobile Styles */
+@media (max-width: 430px) {
+    .contact-info {
+        flex-direction: column;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .contact-info-content {
+        width: 100%;
+        text-align: left;
+    }
+}

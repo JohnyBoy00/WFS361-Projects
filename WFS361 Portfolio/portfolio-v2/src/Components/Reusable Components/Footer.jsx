@@ -37,7 +37,7 @@ function Footer() {
       </div>
       <div className="footer-separator" />
       <p className="footer-copyright">
-        ©2022 Jean van Eck. All Rights Reserved.
+        ©2024 Jean van Eck. All Rights Reserved.
         <br />
       </p>
     </footer>

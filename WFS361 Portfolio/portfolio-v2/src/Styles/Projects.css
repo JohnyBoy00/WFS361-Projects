@@ -30,17 +30,17 @@ body {
 }
 
 .blogapp-project, .register-form, .grocery-list {
-    background-color: #2C2B2B;
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    width: 50%;
-    margin-left: 50px;
+    width: 40%;
+    margin-left: 400px;
+    margin-bottom: 20px;
 }
 
 h2 {
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 p {
@@ -49,18 +49,17 @@ p {
 }
 
 .view-project {
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
+    background-color: #5f5454;
+    border: 2px solid #5f5454;
     color: #FFFFFF;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 8px;
-    margin-top: 20px;
 }
 
 .view-project:hover {
-    background-color: #FFFFFF;
+    background-color: #ceb3b3;
     color: #1C1B1B;
 }
 

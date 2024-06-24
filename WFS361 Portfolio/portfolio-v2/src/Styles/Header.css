@@ -41,3 +41,40 @@
 .nav-links li a:hover {
   text-decoration: underline;
 }
+
+/* Default to hidden */
+.nav-links {
+  display: flex; /* Default display for desktop */
+}
+
+.menu-icon {
+  display: none; /* Hide menu button by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide desktop links on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #181818;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when menu is open */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu button on mobile */
+  }
+}

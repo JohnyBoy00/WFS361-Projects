@@ -10,6 +10,7 @@ function Projects() {
         <div className="projects-container">
             <Header />
             <Main />
+            <div className="divider"/>
             <ContactInfo/>
             <Footer />
         </div>
